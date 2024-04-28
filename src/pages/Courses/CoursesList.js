@@ -24,8 +24,8 @@ const CoursesList = () => {
     <>
     <div className='colo-lg-4 max-auto'>
         
-        <button className='btn btn-success my-2 form-control' onClick={()=>{List({mode:'live'});setLimit(5)}}>limit5</button>
-        <button className='btn btn-success my-2 form-control' onClick={()=>{List({mode:'offline'});setLimit(10)}}>limit10</button>  
+        <button className='btn btn-success my-2 form-control' onClick={setLimit(5)}>limit5</button>
+        <button className='btn btn-success my-2 form-control' onClick={setLimit(10)}>limit10</button>  
         <button className='btn btn-success my-2 form-control' onClick={List}>Allcourses</button>
         <button className='btn btn-success my-2 form-control' onClick={()=>{List({mode:'live'})}}>onlineCourses</button>
         <button className='btn btn-success my-2 form-control' onClick={()=>{List({mode:'offline'})}}>offlineCourses</button>
@@ -43,7 +43,7 @@ const CoursesList = () => {
           <h5>{element.course_title}</h5>
           <p>{element.rating}</p>
           <p>{element.course_cutoff_price}</p>
-          <a href='{element.course_url}'>url</a>
+          <a href={element.course_url}>url</a>
           </div>
           </div>
 
