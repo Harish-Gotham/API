@@ -1,0 +1,42 @@
+{result?<>
+    <div>
+    {result.map((searchelement)=>{
+      div>
+     
+      
+      
+      
+      
+      </div>
+
+
+
+
+    }
+
+
+
+    )
+
+
+
+
+
+
+    }
+
+
+
+
+
+    </div>
+    
+    
+    
+    
+    </>:
+    
+    
+    
+    
+    <></>}
